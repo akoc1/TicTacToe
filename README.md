@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Console Game
+# Tic Tac Toe Console Game
 This repository contains a simple implementation of the classic Tic Tac Toe game for the console. The game allows two players to take turns and compete on a 3x3 grid until one player wins or the game ends in a draw.
 
 # How To Play
