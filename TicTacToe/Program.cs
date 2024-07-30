@@ -66,6 +66,7 @@ namespace TicTacToe
 
             return output;
         }
+
         private static string[] MakeMove(this string[] grid, string player)
         {
             int location = GetNumber($"{player} pick a location: ");
@@ -86,6 +87,7 @@ namespace TicTacToe
 
             return grid;
         }
+
         private static void ShowGrid(string[] grid)
         {
             Console.WriteLine();
@@ -101,6 +103,7 @@ namespace TicTacToe
                     Console.Write($"* ");
             }
         }
+
         private static void ShowHelperGrid(string[] grid)
         {
             string[] helperGrid = new string[9];
@@ -122,6 +125,7 @@ namespace TicTacToe
 
             Console.WriteLine();
         }
+
         private static bool IsWinning(string[] grid, string player)
         {
             if (grid[0] == player && grid[1] == player && grid[2] == player ||
@@ -137,10 +141,12 @@ namespace TicTacToe
 
             return false;
         }
+
         private static string ChangeTurn(string currentTurn)
         {
             return currentTurn == "X" ? "O" : "X";
         }
+
         private static string GetString(string message)
         {
             Console.Write($"{message} ");
@@ -149,6 +155,7 @@ namespace TicTacToe
 
             return output;
         }
+
         private static int GetNumber(string message)
         {
             bool isConversionSuccessful = false;
