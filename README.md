@@ -9,7 +9,7 @@ git clone https://github.com/akoc1/TicTacToe
 Compile and run the game
 ```
 dotnet build
-dotnet run
+dotnet run --project tictactoe
 ```
 
 # Requirements
