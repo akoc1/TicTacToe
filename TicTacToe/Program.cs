@@ -6,13 +6,11 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            string[] grid;
+            string[] grid = InitializeGrid();
             string p1 = "X", p2 = "O";
             string turn = p1, winner = null;
             bool gameOver = false, isTie = false;
             int moveCount = 0;
-
-            grid = SetGrid();
 
             while (gameOver == false)
             {
@@ -55,7 +53,7 @@ namespace TicTacToe
             Console.ReadLine();
         }
 
-        private static string[] SetGrid()
+        private static string[] InitializeGrid()
         {
             string[] output = new string[9];
 
