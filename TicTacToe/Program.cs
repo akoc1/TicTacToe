@@ -6,7 +6,7 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            string[] grid = SetGrid();
+            string[] grid;
             string p1 = "X", p2 = "O";
             string turn = p1, winner = null;
             bool gameOver = false, isTie = false;
